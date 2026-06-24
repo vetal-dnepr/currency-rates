@@ -12,7 +12,7 @@ process.exit(1);
 function fetchRates() {
 return new Promise((resolve, reject) => {
 https.get(
-https://api.currencybeacon.com/v1/latest?api_key=${API_KEY}&base=USD,
+`https://api.currencybeacon.com/v1/latest?api_key=${API_KEY}&base=USD`,
 (res) => {
 let data = '';
 
