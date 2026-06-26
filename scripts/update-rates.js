@@ -78,6 +78,7 @@ const weekAgo = now - 7 * 86400;
 const monthAgo = now - 31 * 86400;
 
 const ratesJson = {
+    version: now,
     updated: now,
     current: rates,
     day: history.find(h => h.timestamp >= dayAgo)?.rates || {},
